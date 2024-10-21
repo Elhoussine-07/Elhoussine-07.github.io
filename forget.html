@@ -9,9 +9,9 @@
     <h1>Récupération de mot de passe</h1>
     <p>Veuillez choisir une méthode pour récupérer votre mot de passe :</p>
     
-    <form action="/recover-password-email" method="GET">
+    <form>
         <label>
-            <input type="radio" name="method" value="email" required>
+            <input type="radio" value="email" required>
             Adresse e-mail
         </label><br>
         <input type="submit" value="Récupérer avec e-mail">
@@ -19,12 +19,12 @@
 
     <form action="/recover-password-phone" method="GET">
         <label>
-            <input type="radio" name="method" value="phone">
+            <input type="radio" value="phone">
             Numéro de téléphone
         </label><br>
         <input type="submit" value="Récupérer avec téléphone">
     </form>
 
-    <p><a href="/login">Retour à la page de connexion</a></p>
+    <p><a href="index.html">Retour à la page d'acceuil</a></p>
 </body>
 </html>
