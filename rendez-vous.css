@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e7987;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+
+form {
+    background-color: #003049;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height:500px;
+    max-width: 500px;
+}
+.Retour{
+justify-content: center;
+justify-items: center;
+padding: 30px;
+padding-left: 28%;
+text-decoration:none;
+}
+a{
+    
+    color: #05ccc6;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+}
+.logo{
+    padding-left: 38%;
+    margin-top: -20px;
+    
+}
+
+.h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    padding: 5px;
+    
+    justify-items: center;
+
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #0a3c8e;
+}
+
+/* Bouton de recherche */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #05ccc6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #048a84;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    form h3 {
+        font-size: 16px;
+    }
+}
