@@ -10,7 +10,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="cms logo.png" alt="CMS Logo">
+                <img src="C:\Users\hp\Downloads\cms logo.png" alt="CMS Logo">
             </div>
             <div class="auth-links">
                 <a href="S'inscrire.html">S'inscrire</a>
@@ -34,29 +34,27 @@
 
     <main>
         <div class="content-container">
-        
             <div class="content-item lang fr">
                 <h1>Rendez-vous</h1>
                 <button><a href="rendez-vous.html">Cliquer ici</a></button>
-                <img src="imggg1.png" alt="Rendez-vous">
+                <img src="C:/Users/hp/Downloads/imggg1.png" alt="Rendez-vous">
             </div>
             <div class="content-item lang en" style="display: none;">
                 <h1>Appointments</h1>
                 <button><a href="rendez-vous.html">Click me</a></button>
-                <img src="imggg1.png" alt="Appointments">
+                <img src="C:/Users/hp/Downloads/imggg1.png" alt="Appointments">
             </div>
 
             <div class="content-item lang fr">
                 <h1>Médicaments</h1>
                 <button><a href="medicament.html">Cliquer ici</a></button>
-                <img src="imggg2.png" alt="Médicaments">
+                <img src="C:/Users/hp/Downloads/imggg2.png" alt="Médicaments">
             </div>
             <div class="content-item lang en" style="display: none;">
                 <h1>Medications</h1>
                 <button><a href="medicament.html">Click here</a></button>
-                <img src="imggg2.png" alt="Medications">
+                <img src="C:/Users/hp/Downloads/imggg2.png" alt="Medications">
             </div>
-            
         </div>
     </main>
 
@@ -64,12 +62,9 @@
         <p>@CMS Tous droits réservés</p>
     </footer>
 
-    
     <script>
-        
         const nomUtilisateur = localStorage.getItem("nomUtilisateur");
 
-        
         const bienvenueFR = document.querySelector(".welcome-text h1.lang.fr");
         const bienvenueEN = document.querySelector(".welcome-text h1.lang.en");
 
@@ -81,14 +76,11 @@
             bienvenueEN.textContent = "Welcome to our website";
         }
 
-       
         function changeLanguage(lang) {
-            
             document.querySelectorAll('.lang').forEach(element => {
                 element.style.display = 'none';
             });
 
-            
             document.querySelectorAll('.' + lang).forEach(element => {
                 element.style.display = 'block';
             });
