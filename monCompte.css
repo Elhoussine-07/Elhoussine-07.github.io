@@ -1,11 +1,10 @@
-/* Reset some default browser styles */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Basic body styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -13,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header styles */
+
 header {
     background: #003049;
     color: #fff;
@@ -28,7 +27,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Button styles */
+
 button {
     background: #28a745;
     color: #fff;
@@ -42,7 +41,7 @@ button:hover {
     background: #218838;
 }
 
-/* Main content styles */
+
 main {
     max-width: 600px;
     margin: 20px auto;
@@ -61,7 +60,7 @@ h2 {
     color: #512da8;
 }
 
-/* Footer styles */
+
 footer {
     text-align: center;
     padding: 10px;
