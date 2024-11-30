@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rendez-vous</title>
     <link rel="stylesheet" href="rendez-vous.css">
 </head>
 <body>
 
     <form>
 
-        <div class="h3"><h3>Enter ce que vous chercher:</h3></div>
-        <input type="text" placeholder="Specialité,Medecin,Etablissement">
-        <label for="villes"></label>
+        <div class="h3"><h3>Entrez ce que vous cherchez :</h3></div>
+        <input type="text" placeholder= "Spécialité, Médecin, Etablissement" required>
+        
+        <label for="villes">Sélectionnez une ville :</label>
         <select id="villes" name="villes">
             <option value="">-- Sélectionnez une ville --</option>
             <option value="agadir">Agadir</option>
@@ -44,14 +45,14 @@
             <option value="tetouan">Tétouan</option>
         </select>
         
-      <label></label>
-      <input type="date">
-      <button>Recherche</button>
-      <div class="Retour"><a href="index.html">Retour à la page d'Acceuil</a></div>
-      <div class="logo">
-        <img src="C:\Users\hp\Downloads\cms logo.png" alt="CMS Logo">
-    </div>
-      
+        <label for="date">Date du rendez-vous :</label>
+        <input type="date" id="date" name="date" required>
+        
+        <button type="submit">Rechercher</button>
+        
+        <div class="Retour"><a href="index.html">Retour à la page d'accueil</a></div>
+        
+        
 
     </form>
 </body>
