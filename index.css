@@ -1,4 +1,4 @@
-/* Style global */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +15,7 @@ body {
 
 .content-container button a{
     text-decoration: none;
+    color: #fff;
 }
 
 .content-container button a:active{
@@ -186,9 +187,6 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.content-item button:hover {
-    background-color: #048a84;
-}
 .footer{
     padding: 200px;
     background-color: #333;
