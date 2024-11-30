@@ -34,7 +34,7 @@
     </footer>
 
     <script>
-        // Charger les informations utilisateur depuis le localStorage
+        
         const utilisateur = JSON.parse(localStorage.getItem("utilisateur"));
 
         if (utilisateur) {
@@ -43,17 +43,20 @@
             document.getElementById("afficherDob").innerText = utilisateur.dob || "Non spécifié";
             document.getElementById("afficherEmail").innerText = utilisateur.email || "Non spécifié";
         } else {
-            // Si aucun utilisateur trouvé, rediriger vers la connexion
+        
             alert("Veuillez vous connecter.");
             window.location.href = "connexion.html";
         }
 
+       
         function deconnexion() {
             localStorage.removeItem("utilisateur");
+            localStorage.removeItem("nomUtilisateur");
             alert("Vous avez été déconnecté.");
             window.location.href = "index.html";
         }
 
+       
         function modifierInformations() {
             alert("Cette fonctionnalité est en cours de développement.");
         }
