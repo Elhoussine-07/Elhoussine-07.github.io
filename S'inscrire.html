@@ -16,16 +16,16 @@
             const email = document.querySelector("input[type='email']").value;
             const password = document.querySelector("input[type='password']").value;
 
-            // Vérification des champs
+            
             if (nom && prenom && dob && email && password) {
-                // Créer un objet utilisateur
+              
                 const utilisateur = { nom, prenom, dob, email, password };
 
-                // Stocker les données utilisateur dans localStorage
+              
                 localStorage.setItem("utilisateur", JSON.stringify(utilisateur));
 
                 alert("Inscription réussie ! Vous pouvez maintenant vous connecter.");
-                // Rediriger vers la page de connexion
+                
                 window.location.href = "connexion.html";
             } else {
                 alert("Veuillez remplir tous les champs !");
