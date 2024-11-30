@@ -43,13 +43,12 @@
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
-            // Récupérer l'utilisateur stocké
+          
             const utilisateurEnregistre = JSON.parse(localStorage.getItem("utilisateur"));
         if (email === utilisateurEnregistre.email && password === utilisateurEnregistre.password) {
     alert("Connexion réussie ! Bienvenue " + utilisateurEnregistre.nom);
-    // Stocker le nom de l'utilisateur dans le localStorage
+    
     localStorage.setItem("nomUtilisateur", utilisateurEnregistre.nom);
-    // Rediriger vers la page d'accueil
     window.location.href = "index.html";
 } else {
     alert("Email ou mot de passe incorrect.");
