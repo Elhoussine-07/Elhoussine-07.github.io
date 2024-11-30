@@ -6,15 +6,13 @@
     <title>CMS Site</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="cms logo.png">
+                <img src="C:\Users\hp\Downloads\cms logo.png" alt="CMS Logo">
             </div>
-            <div class="auth-links" >
+            <div class="auth-links">
                 <a href="S'inscrire.html">S'inscrire</a>
                 <a href="connexion.html">Connexion</a>
                 <a href="monCompte.html">Mon Compte</a>
@@ -36,27 +34,29 @@
 
     <main>
         <div class="content-container">
+        
             <div class="content-item lang fr">
                 <h1>Rendez-vous</h1>
-                <button><a href="rendez-vous.html">Cliquer ici</a></button> 
-                <img src="imggg1.png" alt="Rendez-vous">
+                <button><a href="rendez-vous.html">Cliquer ici</a></button>
+                <img src="C:/Users/hp/Downloads/imggg1.png" alt="Rendez-vous">
             </div>
             <div class="content-item lang en" style="display: none;">
                 <h1>Appointments</h1>
-                <button><a href="rendez-vous.html">Click me</a></button> 
-                <img src="imggg1.png" alt="Appointments">
+                <button><a href="rendez-vous.html">Click me</a></button>
+                <img src="C:/Users/hp/Downloads/imggg1.png" alt="Appointments">
             </div>
 
             <div class="content-item lang fr">
                 <h1>Médicaments</h1>
-                <button>Cliquer ici</button>
-                <img src="imggg2.png" alt="Médicaments">
+                <button><a href="medicament.html">Cliquer ici</a></button>
+                <img src="C:/Users/hp/Downloads/imggg2.png" alt="Médicaments">
             </div>
             <div class="content-item lang en" style="display: none;">
                 <h1>Medications</h1>
-                <button>Click here</button>
-                <img src="imggg2.png" alt="Medications">
+                <button><a href="medicament.html">Click here</a></button>
+                <img src="C:/Users/hp/Downloads/imggg2.png" alt="Medications">
             </div>
+            
         </div>
     </main>
 
@@ -64,29 +64,35 @@
         <p>@CMS Tous droits réservés</p>
     </footer>
 
-    <!-- JavaScript pour changer la langue -->
+    
     <script>
-        // Récupérer le nom de l'utilisateur depuis le localStorage
-const nomUtilisateur = localStorage.getItem("nomUtilisateur");
+        
+        const nomUtilisateur = localStorage.getItem("nomUtilisateur");
 
-// Modifier la phrase de bienvenue si l'utilisateur est connecté
-if (nomUtilisateur) {
-    document.querySelector(".welcome-text h1.lang.fr").textContent = "Bienvenue " + nomUtilisateur;
-    document.querySelector(".welcome-text h1.lang.en").textContent = "Welcome " + nomUtilisateur;
-}
+        
+        const bienvenueFR = document.querySelector(".welcome-text h1.lang.fr");
+        const bienvenueEN = document.querySelector(".welcome-text h1.lang.en");
 
+        if (nomUtilisateur) {
+            bienvenueFR.textContent = "Bienvenue " + nomUtilisateur;
+            bienvenueEN.textContent = "Welcome " + nomUtilisateur;
+        } else {
+            bienvenueFR.textContent = "Bienvenue cher visiteur";
+            bienvenueEN.textContent = "Welcome to our website";
+        }
+
+       
         function changeLanguage(lang) {
-            // Masque tous les éléments de langue
+            
             document.querySelectorAll('.lang').forEach(element => {
                 element.style.display = 'none';
             });
 
-            // Affiche les éléments de la langue sélectionnée
+            
             document.querySelectorAll('.' + lang).forEach(element => {
                 element.style.display = 'block';
             });
         }
     </script>
-
 </body>
 </html>
