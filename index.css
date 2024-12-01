@@ -3,45 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     color: #333;
     text-align: center;
-    margin: 0;
+    margin: 0%;
 }
-
-.content-container button a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.content-container button a:active{
-    color: #0a3c8e;
-}
-
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
-    background-color: #003049;
-    margin: 0px;
+    flex-direction: row;  
+    flex-wrap: nowrap;
+    height:16ex;
+    background-color: #003049; 
+  }
+.logo img{
+    top: 1ex;
+    left: 1ex;
+    height:12ex;
 }
-
-.logo img {
-    height: 150px;
-    width: 150px;
-    display: flex;
-}
-
 .language-help {
-    display: flex;
+    display: flex; 
+    justify-content: center;
     align-items: center;
+    width: 50%;
+    align-self: center;
+    column-gap:10%;
+}
+.language-help select {
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    height: 5ex;
+} 
+.language-help a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    height: 5ex;
+    padding: 2% ; 
 }
 
+.auth-links{
+    align-items: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    column-gap:10%;
+    padding: 5% 2%;
+    width: 100%;
+}
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    height: 5ex;
+    width:15ex ;
+    border: 2px solid white;
+    border-radius: 6px;
+    align-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-links a:hover {
+    background-color: white;
+    color: #1a143b;
+}
 .welcome-text {
-    padding: 20px;
+    padding: 4ex;
     width: 100%;
     color: #73accf;
 }
@@ -55,6 +84,7 @@ body {
     animation: moveText 10s linear infinite;
 }
 
+
 @keyframes moveText {
     from {
         transform: translateX(50%);
@@ -64,43 +94,12 @@ body {
     }
 }
 
-.language-help select {
-    margin-right: 15px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    color: #333;
-}
-
-.language-help a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .aide a {
     border: 1px solid black;
 }
 
-.auth-links a {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 12px 16px;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.auth-links a:hover {
-    background-color: white;
-    color: #5d3a9b;
-}
-
 .welcome-text {
-    padding: 0 20px;
+    padding: 0 4ex;
     background-color: #f5eaea;
 }
 
@@ -110,71 +109,58 @@ body {
 
 .welcome-text p {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 2ex;
 }
 
 main {
-    padding: 50px 0;
+    padding: 5ex ;
     background-color: #2e7987;
 }
 
 .content-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 10%;
+    column-gap: 10%;
     align-items: center;
-    padding: 50px;
-}
-
-.content-item {
-    text-align: center;
-    width: 900px;
-}
-
-.content-item h1 {
-    color: #73accf;
-    margin-bottom: 15px;
-}
-
-.content-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
     background-color: #2e7987;
 }
 
+.content-container button a{
+    text-decoration: none;
+    color: #fff;
+}
+.content-container button a:active{
+    color: #0a3c8e;
+}
 .content-item {
     text-align: center;
-    width: 400px;
-    height: 400px;
-    padding: 20px;
+    width: 40ex;
+    height: 40ex;
+    padding: 5ex;
     background-color: #f5eaea;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.content-item img{
+    margin-top: 5%;
+    height: 60%;
+    width: 100%;
+    border-radius: 6px;
+}
 .content-item:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .content-item h1 {
-    font-size: 24px;
-    color: #0a3c8e;
-    margin-bottom: 10px;
+    color: #73accf;
+    margin-bottom: 15px;
 }
-
-.content-item img {
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 8px;
-}
-
 .content-item button {
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 4%;
+    padding: 2ex;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
@@ -184,65 +170,30 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .logo img{
+        position: absolute;
+    }
+    .auth-links{
+        padding-left: 20ex;
+    }
+    .header-container{
+        flex-direction: column;
+        height: 20%;
+    }
+    .content-container{
+        flex-direction: column;
+        row-gap: 5ex;
+    }
+    .language-help {
+        margin-left: 35%;
+    }
+}
 
 .footer {
     padding: 200px;
     background-color: #333;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    /* Adapter la disposition de la barre d'en-tête */
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .header-container .logo img {
-        height: 100px;
-        width: 100px;
-    }
-
-    .auth-links a {
-        margin-left: 0;
-        margin-top: 10px;
-        padding: 8px 10px;
-        font-size: 14px;
-    }
-
-    /* Adapter les cartes */
-    .content-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .content-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .content-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    .content-item h1 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .welcome-text h1 {
-        font-size: 24px;
-    }
-
-    .auth-links a {
-        padding: 6px 8px;
-        font-size: 12px;
-    }
-
-    .content-container {
-        padding: 10px;
-    }
 }
