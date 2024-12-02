@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>CMS Site</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -16,18 +17,19 @@
                 <img src="cms logo.png" alt="CMS Logo">
             </div>
             <div class="auth-links">
-                <a href="S'inscrire.html">S'inscrire</a>
-                <a href="connexion.html">Connexion</a>
-                <a href="monCompte.html">Mon Compte</a>
+                <a href="S'inscrire.html"><i class="fas fa-user-plus"></i> S'inscrire</a>
+                <a href="connexion.html"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+                <a href="monCompte.html"><i class="fas fa-user"></i> Mon Compte</a>
+               
             </div>
 
             <div class="language-help">
                 <select onchange="changeLanguage(this.value)">
-                    <option value="">-- Sélectionnez une langue --</option>
+                    <option value=""><i class="fas fa-globe"></i> -- Sélectionnez une langue --</option>
                     <option value="fr">FR</option>
                     <option value="en">EN</option>
                 </select>
-                <a href="aide.html">Aide?</a>
+                <a href="aide.html"><i class="fas fa-question-circle"></i> Aide</a>
             </div>
         </div>
         <div class="welcome-text">
