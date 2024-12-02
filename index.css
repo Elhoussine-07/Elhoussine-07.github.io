@@ -5,9 +5,9 @@
 }
 body {
     font-family: Arial, sans-serif;
-    color: #333;
     text-align: center;
     margin: 0%;
+    
 }
 .header-container {
     display: flex;
@@ -40,6 +40,8 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border: 2px solid white;
+    border-radius: 6px;
     height: 5ex;
     padding: 2% ; 
 }
@@ -113,18 +115,17 @@ body {
 }
 
 main {
-    padding: 5ex ;
-    background-color: #2e7987;
-}
+    background-image: url("rendez-vous-medicaux-en-ligne-mdecins.jpg");
+    background-size: cover;
 
+}
 .content-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    padding: 10%;
+    padding: 8%;
     column-gap: 10%;
     align-items: center;
-    background-color: #2e7987;
 }
 
 .content-container button a{
@@ -136,8 +137,8 @@ main {
 }
 .content-item {
     text-align: center;
-    width: 40ex;
-    height: 40ex;
+    width: 50%;
+    height: 100%;
     padding: 5ex;
     background-color: #f5eaea;
     border-radius: 6px;
